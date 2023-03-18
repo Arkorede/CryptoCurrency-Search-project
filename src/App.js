@@ -62,3 +62,7 @@ function App() {
 }
 
 export default App;
+
+// "homepage": "https://arkorede.github.io/CryptoCurrency-Search-project",
+// "predeploy": "npm run build",
+// "deploy": "gh-pages -d build",
