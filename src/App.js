@@ -36,13 +36,13 @@ function App() {
       <h1 className='bg-info p-4'>Cryptocurrency Search</h1>
       <div className='d-flex justify-content-center'>
         <div className='col-md-4 mt-5'>
-          <input type="text" className="form-control" value={crypto} onChange={(e) => setCrypto(e.target.value)} placeholder="Enter the cryptocurrency" required />
+          <input type="text" className="form-control" value={crypto} onChange={(e) => setCrypto(e.target.value.toLowerCase())} placeholder="Enter the cryptocurrency" required />
         </div>
       </div>
       <button onClick={handleSubmit} className='btn btn-secondary px-5 mt-4'>Submit</button>
       <div className='mt-5 container-fluid d-flex justify-content-center'>
         <div className='col-md-4 bg-success p-2 rounded'>
-          <img src={img} width="150" />
+          <img src={img} width="150" alt='' />
           <br />
           <h1 className='text-white'>{coin}</h1>
           <h2>{symbol}</h2>
